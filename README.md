@@ -1,3 +1,3 @@
-# SnakeWithACM
+# Snake Lite
 
-This is simple implementation of Snake game and acm.graphics library.
+This is an implementation of the Snake game using the acm.graphics library.
