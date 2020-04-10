@@ -6,6 +6,7 @@
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
+import java.util.ArrayList;
 import javax.swing.Timer;
 import acm.graphics.GLabel;
 import acm.graphics.GOval;
@@ -13,9 +14,9 @@ import acm.program.GraphicsProgram;
 
 public class MainClass extends GraphicsProgram implements ActionListener {
 
-	public GOval ball;
+	public Ball ball;
 
-	private SnakePart[] snakeBody;
+	private ArrayList<SnakePart> snakeBody;
 
 	private int snakeX, snakeY, snakeWidth, snakeHeight;
 
@@ -23,19 +24,19 @@ public class MainClass extends GraphicsProgram implements ActionListener {
 
 	private boolean isPlaying, isGameOver;
 	private int score, previousScore;
-	private GLabel scoreLabel;
+	private Scoreboard scoreLabel;
 
 	public void run() {
 
-
+		addKeyListeners();
 	}
 
     public void drawSnake() {
 
     }
 
-	public void keyPressed(KeyEvent e) {
-		switch (e.getKeyCode()) {
+	public void keyPressed(KeyEvent keyPressed) {
+		switch (keyPressed.getKeyCode()) {
 		case KeyEvent.VK_UP:
 
 
