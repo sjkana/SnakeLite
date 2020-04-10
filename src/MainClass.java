@@ -1,7 +1,4 @@
-/*
- * author : Natig Babayev
- * December, 2015
- */
+
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
